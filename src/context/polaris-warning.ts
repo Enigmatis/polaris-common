@@ -1,4 +1,3 @@
-export interface PolarisWarning {
-    message: string;
-    path?: string[];
-}
+import { ApolloError } from 'apollo-server-errors';
+
+export type PolarisWarning = ApolloError | string;
